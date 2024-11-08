@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "llm-data-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["TheTamT3 <phamthetam6@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scrapy = "^2.11.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]
+target-version = "py311"
+line-length = 150
+output-format = "concise"
+show-fixes = true
+unsafe-fixes = false
+preview = true
+exclude = ["tutorials/", "tests/"]
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle
+    "F", # pyflakes
+    "B", # flake8-bugbear
+    "UP", # pyupgrade,
+    "I", # isort,
+    "Q", # quote
+    "W", # warning
+]
+ignore = ["B008"]
+
+unfixable = ["B"]
+
+[tool.ruff.format]
+docstring-code-format = true
+quote-style = "double"
+
+[tool.pylint]
+disable = [
+    "too-many-instance-attributes",
+    "too-few-public-methods",
+    "too-many-return-statements",
+    "too-many-locals",
+    "too-many-arguments",
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "import-outside-toplevel",
+    "cyclic-import",
+    "redefined-builtin",
+    "broad-exception-caught",
+    "broad-exception-raised",
+    "super-init-not-called",
+    "duplicate-code",
+    "fixme",
+    "logging-fstring-interpolation"
+]
+reports = false
+max-branches = 20
+output-format = "colorized"
+max-line-length = 150
+class-const-naming-style = "PascalCase"
+generated-members = ["googleapiclient.*"]
+
+
+[tool.mypy]
+no_implicit_optional = false
+disallow_untyped_decorators = false
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_return_any = false
+warn_no_return = false
+warn_unreachable = true
+strict = true
+disallow_subclassing_any = false
+strict_optional = true
+disable_error_code = ["arg-type"]
+plugins = ["pydantic.mypy"]
