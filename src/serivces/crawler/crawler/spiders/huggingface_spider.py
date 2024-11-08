@@ -60,17 +60,17 @@ class HuggingfaceSpider(scrapy.Spider):
         self.save_to_json(data)
         self._cal_duration()
 
-    def _cal_duration(self):
+    def _cal_duration(self) -> None:
         run_time = timeit.default_timer() - self.start_time
         self.log(f"Spider run time: {run_time:.2f} seconds", level=logging.WARNING)
 
-    def save_to_json(self, data, filename="../../../assets/output.json"):
+    def save_to_json(self, data, filename="../../../assets/output.json") -> None:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
         self.log("Saved documents", level=logging.WARNING)
 
     @staticmethod
-    def _is_valid_dataset_by_time(article_time: str, weeks=2) -> bool:
+    def _is_valid_dataset_by_time(article_time: str, weeks: int = 2) -> bool:
         refer_time = datetime.now() - timedelta(weeks=weeks)
         article_date = datetime.fromisoformat(article_time)
         if refer_time <= article_date <= datetime.now():

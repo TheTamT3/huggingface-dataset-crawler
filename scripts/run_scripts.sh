@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#cd ./Projects/llm-data-pipeline
 cd ./src/serivces/crawler || exit
 scrapy crawl hug
 

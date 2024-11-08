@@ -13,7 +13,7 @@ def main(path: str = None) -> None:
     documents = helpers.read_json(path)
 
     logging.info("Start processing documents...")
-    for idx, document in enumerate(documents["documents"][:]):
+    for idx, document in enumerate(documents["documents"]):
         dataset_name = document["data"]["dataset_name"]
         logging.warning(f"\n\n{idx}. Processing Document: {dataset_name}")
 
@@ -40,7 +40,6 @@ def main(path: str = None) -> None:
             dataset_name = dataset_name.replace("/", "_")
             created_dataset = agrilla_sv.create(name=dataset_name, fields=fields, questions=questions)
             agrilla_sv.load(created_dataset, records=records[:10])
-
         except Exception as e:
             logging.error(e)
             continue

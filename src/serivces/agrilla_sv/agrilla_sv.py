@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 
 import argilla as rg
 import datasets
@@ -14,17 +15,16 @@ REQUIRED_KEYS = ["instruction", "input", "output"]
 client = rg.Argilla(api_url=_settings.AGRILLA_API_URL, api_key=_settings.AGRILLA_API_KEY)
 
 
-def extract(name: str):
+def extract(name: str) -> datasets.Dataset:
     try:
         dataset = load_dataset(name, trust_remote_code=True)
     except Exception as e:
         logging.warning(e)
         return []
-
     return dataset
 
 
-def transform(records):
+def transform(records: datasets.Dataset) -> list[rg.Record]:
     try:
         if isinstance(records, datasets.dataset_dict.DatasetDict):
             if "train" in records:
@@ -69,32 +69,19 @@ def transform(records):
 
 
 def create(
-    workspace: str = "qna",
-    name: str = None,
-    fields: list = None,
-    questions: list = None,
-    **kwargs,
-):
+    workspace: str = "qna", name: str = None, fields: list[rg.Field] = None, questions: list[rg.TextQuestion] = None, **kwargs: dict[str, Any]
+) -> rg.Dataset:
     settings = rg.Settings(fields=fields, questions=questions, **kwargs)
     dataset = rg.Dataset(name=name, workspace=workspace, settings=settings, client=client)
     dataset.create()
     return dataset
 
 
-def load(dataset, records):
+def load(dataset: rg.Dataset, records: list[rg.Record]) -> None:
     dataset.records.log(records)
 
 
-def delete(name: str):
+def delete(name: str) -> None:
     dataset_to_delete = client.datasets(name=name)
     dataset_to_delete.delete()
     logging.warning(f"Dataset {name} deleted")
-
-
-#
-# if __name__ == '__main__':
-#     name = "fka/awesome-chatgpt-prompts"
-#     a = extract(name)
-#     print("rs: ", a)
-#     b = extract(name)
-#     print("rs: ", b)
