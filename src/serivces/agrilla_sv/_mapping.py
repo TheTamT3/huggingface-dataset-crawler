@@ -7,9 +7,9 @@ key_mapping_list = {
     "query": "input",
     "question": "input",
     # output
-    "output": "output",
-    "response": "output",
-    "label": "output",
-    "answer": "output",
-    "positive": "output",
+    "output": "response",
+    "response": "response",
+    "label": "response",
+    "answer": "response",
+    "positive": "response",
 }

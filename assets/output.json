@@ -2,260 +2,65 @@
     "documents": [
         {
             "data": {
-                "url": "https://huggingface.co/datasets/FrancophonIA/revision_collaborative_etayee",
-                "dataset_name": "FrancophonIA/revision_collaborative_etayee"
+                "url": "https://huggingface.co/datasets/FrancophonIA/W2C",
+                "dataset_name": "FrancophonIA/W2C"
             },
             "metadata": {
-                "update_time": "2024-10-25T20:11:50",
-                "languages": [
-                    "French",
-                    "Vietnamese"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/jaeyong2/persona-inst",
-                "dataset_name": "jaeyong2/persona-inst"
-            },
-            "metadata": {
-                "update_time": "2024-10-26T03:05:38",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "parquet"
-                ],
-                "languages": [
-                    "Japanese",
-                    "Korean",
-                    "Thai"
-                ],
-                "size": [
-                    "1M - 10M"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "Dask",
-                    "Croissant"
-                ],
-                "license": [
-                    "cc-by-nc-sa-4.0"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/jaeyong2/viet-persona-cot-inst",
-                "dataset_name": "jaeyong2/viet-persona-cot-inst"
-            },
-            "metadata": {
-                "update_time": "2024-10-26T03:22:14",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "parquet"
-                ],
-                "languages": [
-                    "Vietnamese"
-                ],
-                "size": [
-                    "100K - 1M"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "Dask",
-                    "Croissant"
-                ],
-                "license": [
-                    "cc-by-nc-sa-4.0"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/rikka-snow/prompt-injection-vi",
-                "dataset_name": "rikka-snow/prompt-injection-vi"
-            },
-            "metadata": {
-                "update_time": "2024-10-28T08:27:15",
+                "update_time": "2024-10-30T22:42:30",
                 "tasks": [
-                    "Text Classification"
+                    "Token Classification"
                 ],
                 "modalities": [
                     "Text"
                 ],
                 "formats": [
-                    "parquet"
+                    "text"
                 ],
                 "languages": [
-                    "Vietnamese"
+                    "Afrikaans",
+                    "Tosk Albanian",
+                    "Albanian"
                 ],
                 "size": [
-                    "< 1K"
+                    "100M - 1B"
                 ],
                 "libraries": [
                     "Datasets",
-                    "pandas",
                     "Croissant"
                 ],
                 "license": [
-                    "mit"
+                    "cc-by-sa-3.0"
                 ]
             }
         },
         {
             "data": {
-                "url": "https://huggingface.co/datasets/HiTruong/Film_QA_Pairs",
-                "dataset_name": "HiTruong/Film_QA_Pairs"
+                "url": "https://huggingface.co/datasets/bertin-project/mc4-sampling",
+                "dataset_name": "bertin-project/mc4-sampling"
             },
             "metadata": {
-                "update_time": "2024-10-27T06:07:43",
+                "update_time": "2024-10-31T12:10:41",
                 "tasks": [
                     "Text Generation",
-                    "Question Answering"
+                    "Fill-Mask"
                 ],
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "csv"
+                "sub-tasks": [
+                    "language-modeling"
                 ],
                 "languages": [
-                    "Vietnamese",
-                    "English"
+                    "Afrikaans",
+                    "Amharic",
+                    "Arabic"
                 ],
                 "size": [
-                    "10K - 100K"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/rikka-snow/prompt-injection-multilingual",
-                "dataset_name": "rikka-snow/prompt-injection-multilingual"
-            },
-            "metadata": {
-                "update_time": "2024-10-28T10:11:21",
-                "tasks": [
-                    "Text Classification"
-                ],
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "parquet"
-                ],
-                "languages": [
-                    "Vietnamese",
-                    "English",
-                    "Chinese"
-                ],
-                "size": [
-                    "1K - 10K"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ],
-                "license": [
-                    "mit"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/jtz18/biblenlp-corpus",
-                "dataset_name": "jtz18/biblenlp-corpus"
-            },
-            "metadata": {
-                "update_time": "2024-10-27T10:17:57",
-                "tasks": [
-                    "Translation"
-                ],
-                "languages": [
-                    "Arifama-Miniafia",
-                    "Ankave",
-                    "Abau"
-                ],
-                "size": [
-                    "1M<n<10M"
-                ],
-                "license": [
-                    "cc-by-4.0",
-                    "other"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/prometheus-eval/MMQA",
-                "dataset_name": "prometheus-eval/MMQA"
-            },
-            "metadata": {
-                "update_time": "2024-10-26T14:48:16",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "parquet"
-                ],
-                "languages": [
-                    "Bengali",
-                    "Korean",
-                    "Basque"
-                ],
-                "size": [
-                    "< 1K"
+                    "n<1K"
                 ],
                 "arxiv": [
                     "arxiv:",
-                    "2410.17578"
+                    "1910.10683"
                 ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/HiTruong/film_qa_pairs_dataset",
-                "dataset_name": "HiTruong/film_qa_pairs_dataset"
-            },
-            "metadata": {
-                "update_time": "2024-10-27T09:29:11",
-                "tasks": [
-                    "Text Generation",
-                    "Question Answering"
-                ],
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "csv"
-                ],
-                "languages": [
-                    "Vietnamese"
-                ],
-                "size": [
-                    "10K - 100K"
-                ],
-                "tags": [
-                    "art"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
+                "license": [
+                    "odc-by"
                 ]
             }
         },
@@ -290,46 +95,6 @@
                     "classical-literature",
                     "translation",
                     "cultural-heritage"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ],
-                "license": [
-                    "mit"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/lunovian/vietnamese-poem-context",
-                "dataset_name": "lunovian/vietnamese-poem-context"
-            },
-            "metadata": {
-                "update_time": "2024-10-31T15:55:57",
-                "tasks": [
-                    "Translation",
-                    "Summarization",
-                    "Feature Extraction"
-                ],
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "csv"
-                ],
-                "languages": [
-                    "Vietnamese",
-                    "English"
-                ],
-                "size": [
-                    "< 1K"
-                ],
-                "tags": [
-                    "translation",
-                    "summary",
-                    "poem"
                 ],
                 "libraries": [
                     "Datasets",
@@ -385,32 +150,97 @@
         },
         {
             "data": {
-                "url": "https://huggingface.co/datasets/bertin-project/mc4-sampling",
-                "dataset_name": "bertin-project/mc4-sampling"
+                "url": "https://huggingface.co/datasets/neulab/PangeaBench-flores",
+                "dataset_name": "neulab/PangeaBench-flores"
             },
             "metadata": {
-                "update_time": "2024-10-31T12:10:41",
+                "update_time": "2024-11-01T18:31:37",
                 "tasks": [
-                    "Text Generation",
-                    "Fill-Mask"
-                ],
-                "sub-tasks": [
-                    "language-modeling"
+                    "Text2Text Generation",
+                    "Translation"
                 ],
                 "languages": [
-                    "Afrikaans",
-                    "Amharic",
-                    "Arabic"
-                ],
-                "size": [
-                    "n<1K"
+                    "Achinese",
+                    "Mesopotamian Arabic",
+                    "Ta'izzi-Adeni Arabic"
                 ],
                 "arxiv": [
                     "arxiv:",
-                    "1910.10683"
+                    "2207.04672",
+                    "arxiv:",
+                    "1902.01382"
+                ],
+                "tags": [
+                    "conditional-text-generation"
                 ],
                 "license": [
-                    "odc-by"
+                    "cc-by-sa-4.0"
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://huggingface.co/datasets/lunovian/vietnamese-poem-context",
+                "dataset_name": "lunovian/vietnamese-poem-context"
+            },
+            "metadata": {
+                "update_time": "2024-10-31T15:55:57",
+                "tasks": [
+                    "Translation",
+                    "Summarization",
+                    "Feature Extraction"
+                ],
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "csv"
+                ],
+                "languages": [
+                    "Vietnamese",
+                    "English"
+                ],
+                "size": [
+                    "< 1K"
+                ],
+                "tags": [
+                    "translation",
+                    "summary",
+                    "poem"
+                ],
+                "libraries": [
+                    "Datasets",
+                    "pandas",
+                    "Croissant"
+                ],
+                "license": [
+                    "mit"
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://huggingface.co/datasets/namht94/vietnamese_chat",
+                "dataset_name": "namht94/vietnamese_chat"
+            },
+            "metadata": {
+                "update_time": "2024-11-02T14:35:56",
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "json"
+                ],
+                "languages": [
+                    "Vietnamese"
+                ],
+                "size": [
+                    "10K - 100K"
+                ],
+                "libraries": [
+                    "Datasets",
+                    "pandas",
+                    "Croissant"
                 ]
             }
         },
@@ -442,31 +272,30 @@
         },
         {
             "data": {
-                "url": "https://huggingface.co/datasets/neulab/PangeaBench-flores",
-                "dataset_name": "neulab/PangeaBench-flores"
+                "url": "https://huggingface.co/datasets/clone668/vn_cn_data",
+                "dataset_name": "clone668/vn_cn_data"
             },
             "metadata": {
-                "update_time": "2024-11-01T18:31:37",
-                "tasks": [
-                    "Text2Text Generation",
-                    "Translation"
+                "update_time": "2024-11-05T11:15:49",
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "json"
                 ],
                 "languages": [
-                    "Achinese",
-                    "Mesopotamian Arabic",
-                    "Ta'izzi-Adeni Arabic"
+                    "Vietnamese"
                 ],
-                "arxiv": [
-                    "arxiv:",
-                    "2207.04672",
-                    "arxiv:",
-                    "1902.01382"
+                "size": [
+                    "10K - 100K"
                 ],
-                "tags": [
-                    "conditional-text-generation"
+                "libraries": [
+                    "Datasets",
+                    "pandas",
+                    "Croissant"
                 ],
                 "license": [
-                    "cc-by-sa-4.0"
+                    "apache-2.0"
                 ]
             }
         },
@@ -510,60 +339,16 @@
         },
         {
             "data": {
-                "url": "https://huggingface.co/datasets/FrancophonIA/W2C",
-                "dataset_name": "FrancophonIA/W2C"
+                "url": "https://huggingface.co/datasets/Twind/Newspapers",
+                "dataset_name": "Twind/Newspapers"
             },
             "metadata": {
-                "update_time": "2024-10-30T22:42:30",
+                "update_time": "2024-11-07T13:22:08",
                 "tasks": [
-                    "Token Classification"
-                ],
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "text"
-                ],
-                "languages": [
-                    "Afrikaans",
-                    "Tosk Albanian",
-                    "Albanian"
-                ],
-                "size": [
-                    "100M - 1B"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "Croissant"
-                ],
-                "license": [
-                    "cc-by-sa-3.0"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/namht94/vietnamese_chat",
-                "dataset_name": "namht94/vietnamese_chat"
-            },
-            "metadata": {
-                "update_time": "2024-11-02T14:35:56",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "json"
+                    "Text2Text Generation"
                 ],
                 "languages": [
                     "Vietnamese"
-                ],
-                "size": [
-                    "10K - 100K"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
                 ]
             }
         },
@@ -590,38 +375,6 @@
                     "Datasets",
                     "pandas",
                     "Croissant"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/phamson02/large-vi-legal-queries",
-                "dataset_name": "phamson02/large-vi-legal-queries"
-            },
-            "metadata": {
-                "update_time": "2024-11-03T19:27:00",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "parquet"
-                ],
-                "languages": [
-                    "Vietnamese"
-                ],
-                "size": [
-                    "100K - 1M"
-                ],
-                "tags": [
-                    "legal"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ],
-                "license": [
-                    "cc-by-4.0"
                 ]
             }
         },
@@ -660,6 +413,72 @@
         },
         {
             "data": {
+                "url": "https://huggingface.co/datasets/phamson02/large-vi-legal-queries",
+                "dataset_name": "phamson02/large-vi-legal-queries"
+            },
+            "metadata": {
+                "update_time": "2024-11-03T19:27:00",
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "parquet"
+                ],
+                "languages": [
+                    "Vietnamese"
+                ],
+                "size": [
+                    "100K - 1M"
+                ],
+                "tags": [
+                    "legal"
+                ],
+                "libraries": [
+                    "Datasets",
+                    "pandas",
+                    "Croissant"
+                ],
+                "license": [
+                    "cc-by-4.0"
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://huggingface.co/datasets/leduckhai/VietMed-Sum",
+                "dataset_name": "leduckhai/VietMed-Sum"
+            },
+            "metadata": {
+                "update_time": "2024-11-09T13:41:08",
+                "tasks": [
+                    "Summarization"
+                ],
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "parquet"
+                ],
+                "languages": [
+                    "Vietnamese",
+                    "English"
+                ],
+                "size": [
+                    "100K - 1M"
+                ],
+                "arxiv": [
+                    "arxiv:",
+                    "2406.15888"
+                ],
+                "libraries": [
+                    "Datasets",
+                    "pandas",
+                    "Croissant"
+                ]
+            }
+        },
+        {
+            "data": {
                 "url": "https://huggingface.co/datasets/pacscilab/VoxCommunis",
                 "dataset_name": "pacscilab/VoxCommunis"
             },
@@ -677,35 +496,6 @@
                     "Phonetics",
                     "Linguistics",
                     "Corpus"
-                ]
-            }
-        },
-        {
-            "data": {
-                "url": "https://huggingface.co/datasets/clone668/vn_cn_data",
-                "dataset_name": "clone668/vn_cn_data"
-            },
-            "metadata": {
-                "update_time": "2024-11-05T11:15:49",
-                "modalities": [
-                    "Text"
-                ],
-                "formats": [
-                    "json"
-                ],
-                "languages": [
-                    "Vietnamese"
-                ],
-                "size": [
-                    "10K - 100K"
-                ],
-                "libraries": [
-                    "Datasets",
-                    "pandas",
-                    "Croissant"
-                ],
-                "license": [
-                    "apache-2.0"
                 ]
             }
         },
@@ -733,6 +523,57 @@
                     "Datasets",
                     "pandas",
                     "Croissant"
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://huggingface.co/datasets/aklywtx/corpus_vi.txt",
+                "dataset_name": "aklywtx/corpus_vi.txt"
+            },
+            "metadata": {
+                "update_time": "2024-11-10T14:05:04",
+                "languages": [
+                    "Vietnamese"
+                ],
+                "size": [
+                    "100K<n<1M"
+                ],
+                "license": [
+                    "mit"
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "https://huggingface.co/datasets/VLSP2023-MT/ViBidirectionMT-Eval",
+                "dataset_name": "VLSP2023-MT/ViBidirectionMT-Eval"
+            },
+            "metadata": {
+                "update_time": "2024-11-08T08:36:36",
+                "tasks": [
+                    "Translation"
+                ],
+                "modalities": [
+                    "Text"
+                ],
+                "formats": [
+                    "text"
+                ],
+                "languages": [
+                    "Lao",
+                    "Vietnamese",
+                    "Chinese"
+                ],
+                "size": [
+                    "1K - 10K"
+                ],
+                "libraries": [
+                    "Datasets",
+                    "Croissant"
+                ],
+                "license": [
+                    "apache-2.0"
                 ]
             }
         }
