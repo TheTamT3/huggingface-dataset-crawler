@@ -63,7 +63,7 @@ class HuggingfaceSpider(scrapy.Spider):
         run_time = timeit.default_timer() - self.start_time
         self.log(f"Spider run time: {run_time:.2f} seconds", level=logging.WARNING)
 
-    def save_to_json(self, data, filename="../../../assets/output.json") -> None:
+    def save_to_json(self, data, filename="assets/output.json") -> None:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
 

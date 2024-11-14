@@ -4,11 +4,11 @@ import time
 import schedule
 
 
-def run_bash_script():
-    subprocess.run(["bash", "scripts/run_scripts.sh"])
+def run_schedule():
+    subprocess.run(["python", "src/main.py"])
 
 
-schedule.every(1).minutes.do(run_bash_script)
+schedule.every(1).minutes.do(run_schedule)
 # schedule.every(14).days.do(run_bash_script)
 
 while True:
